@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.mockito.Mockito.*;
 
 public class BusinessRuleEngineTest {
-    @Test
+    @Deprecated
     public void shouldPerformActionWithFacts() {
         final Action mockAction = mock(Action.class);
         final Facts mockFacts = mock(Facts.class);
