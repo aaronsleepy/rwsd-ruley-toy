@@ -1,4 +1,4 @@
-package com.socurites.ruley.domain;
+package com.socurites.ruley.domain.rule;
 
 @FunctionalInterface
 public interface Action {
