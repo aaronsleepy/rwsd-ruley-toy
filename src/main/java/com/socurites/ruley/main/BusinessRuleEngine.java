@@ -2,13 +2,22 @@ package com.socurites.ruley.main;
 
 import com.socurites.ruley.domain.Action.Action;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BusinessRuleEngine {
+    private final List<Action> actions;
+
+    public BusinessRuleEngine() {
+        this.actions = new ArrayList<>();
+    }
+
     /**
      * 액션 추가
      * @param action
      */
     public void addAction(final Action action) {
-        throw new UnsupportedOperationException();
+        this.actions.add(action);
     }
 
     /**
@@ -16,7 +25,7 @@ public class BusinessRuleEngine {
      * @return
      */
     public int count() {
-        throw new UnsupportedOperationException();
+        return this.actions.size();
     }
 
     /**
