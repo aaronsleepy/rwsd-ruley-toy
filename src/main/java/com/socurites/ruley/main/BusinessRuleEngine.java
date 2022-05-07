@@ -1,6 +1,6 @@
 package com.socurites.ruley.main;
 
-import com.socurites.ruley.domain.Action.Action;
+import com.socurites.ruley.domain.action.Action;
 
 import java.util.ArrayList;
 import java.util.List;
