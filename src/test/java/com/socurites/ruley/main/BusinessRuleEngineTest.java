@@ -1,7 +1,7 @@
 package com.socurites.ruley.main;
 
-import com.socurites.ruley.domain.rule.Facts;
-import com.socurites.ruley.domain.rule.Action;
+import com.socurites.ruley.domain.rule.part.Facts;
+import com.socurites.ruley.domain.rule.part.Action;
 import org.junit.jupiter.api.Test;
 
 import static org.mockito.Mockito.*;

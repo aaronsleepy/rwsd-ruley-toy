@@ -1,6 +1,9 @@
 package com.socurites.ruley.domain.rule;
 
-import org.assertj.core.api.Assertions;
+import com.socurites.ruley.domain.inspector.Inspector;
+import com.socurites.ruley.domain.inspector.Report;
+import com.socurites.ruley.domain.rule.part.ConditionalAction;
+import com.socurites.ruley.domain.rule.part.Facts;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

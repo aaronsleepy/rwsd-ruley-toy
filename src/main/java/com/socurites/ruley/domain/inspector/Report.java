@@ -1,5 +1,7 @@
-package com.socurites.ruley.domain.rule;
+package com.socurites.ruley.domain.inspector;
 
+import com.socurites.ruley.domain.rule.part.ConditionalAction;
+import com.socurites.ruley.domain.rule.part.Facts;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
