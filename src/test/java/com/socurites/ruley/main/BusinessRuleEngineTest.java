@@ -1,9 +1,12 @@
 package com.socurites.ruley.main;
 
+import com.socurites.ruley.domain.action.Action;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 import static org.assertj.core.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 public class BusinessRuleEngineTest {
     @Test
@@ -20,5 +23,16 @@ public class BusinessRuleEngineTest {
         businessRuleEngine.addAction(() -> {});
 
         assertThat(businessRuleEngine.count()).isEqualTo(2);
+    }
+
+    @Test
+    public void shouldExecuteOneAction() {
+        final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();
+        final Action mockAction = mock(Action.class);
+
+        businessRuleEngine.addAction(mockAction);
+        businessRuleEngine.run();
+
+        verify(mockAction).execute();
     }
 }

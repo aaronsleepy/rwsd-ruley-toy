@@ -32,6 +32,6 @@ public class BusinessRuleEngine {
      * 액션 실행
      */
     public void run() {
-        throw new UnsupportedOperationException();
+        this.actions.forEach(Action::execute);
     }
 }
