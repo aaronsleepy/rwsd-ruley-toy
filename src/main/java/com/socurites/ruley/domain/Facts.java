@@ -1,4 +1,4 @@
-package com.socurites.ruley.domain.action;
+package com.socurites.ruley.domain;
 
 import java.util.HashMap;
 import java.util.Map;
