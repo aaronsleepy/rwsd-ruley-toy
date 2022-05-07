@@ -1,9 +1,7 @@
 package com.socurites.ruley.main;
 
 import com.socurites.ruley.domain.action.Action;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -33,6 +31,6 @@ public class BusinessRuleEngineTest {
         businessRuleEngine.addAction(mockAction);
         businessRuleEngine.run();
 
-        verify(mockAction).execute();
+        verify(mockAction).perform();
     }
 }
